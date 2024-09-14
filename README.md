@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Unitra Recrutation Task
 
-## Getting Started
+The project was written in NextJS 14.2.11 App directory.
 
-First, run the development server:
+Packages used to improve the application:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- next-intl - handling page translation
+- swiper - carousel for product photos
+- axios - handling REST requests
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Styling**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I decided to use the basic CSS Modules to style the page, because installing additional packages for such a small project seemed unnecessary to me.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Page translation**
 
-## Learn More
+The page is translated using the next-intl package, I skipped translating products (titles and descriptions), because I use an external database.
 
-To learn more about Next.js, take a look at the following resources:
+**Mocked data**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To illustrate data fetching, I used the external fakestoreapi.com API, because it met the guidelines that were given in the task.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Folder structure**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Using the NextJS functionality - App Directory - I decided to name all folders that are in the app folder according to the convention with "\_" before the folder name. I store routing files in the (routing) folder.

@@ -1,0 +1,42 @@
+.c-product-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	min-height: 7rem;
+
+	padding: 2rem 1rem;
+
+	background-color: rgba(0, 0, 0, 0.45);
+	border-radius: 0.5rem;
+
+	@media (min-width: 600px) {
+		min-height: 10rem;
+
+		padding: 2rem 4rem;
+	}
+}
+
+.c-product-item__title {
+	font-size: 1.2rem;
+
+	text-align: center;
+}
+
+.c-product-item__picture {
+	width: auto;
+	max-width: 15rem;
+	height: 12rem;
+
+	margin-bottom: 2rem;
+
+	object-fit: contain;
+}
+
+.c-product-item__price {
+	color: rgb(140, 134, 20);
+
+	margin-top: 0.5rem;
+}

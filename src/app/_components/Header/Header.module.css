@@ -1,0 +1,33 @@
+.c-header {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	gap: 1.5rem;
+
+	padding: 0.5rem 1rem;
+
+	position: fixed;
+
+	text-align: center;
+
+	z-index: 10;
+
+	background-color: rgba(0, 0, 0, 0.4);
+
+	@media (min-width: 650px) {
+		padding: 2rem 1rem;
+
+		flex-direction: row;
+	}
+}
+
+.c-header_end-side-wrapper {
+	display: flex;
+	align-items: center;
+
+	gap: 1.5rem;
+}

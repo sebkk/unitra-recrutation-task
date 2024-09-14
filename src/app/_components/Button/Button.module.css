@@ -1,0 +1,22 @@
+.c-button {
+	padding: 0.5rem 1.5rem;
+
+	font-size: 1.2rem;
+	font-family: var(--font-geist-mono);
+
+	cursor: pointer;
+
+	transition: 0.3s all ease-in-out;
+	background-color: rgb(140, 134, 20);
+
+	border-radius: 0.2rem;
+	border: none;
+
+	&:hover {
+		background-color: rgb(172, 165, 21);
+	}
+
+	&:active {
+		background-color: rgb(219, 209, 25);
+	}
+}
