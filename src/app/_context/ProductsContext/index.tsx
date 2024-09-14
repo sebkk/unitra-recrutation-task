@@ -10,9 +10,6 @@ interface IProductsContext {
 export const ProductsContext = React.createContext({} as IProductsContext)
 
 const ProductsProvider: FC<{ children: ReactNode }> = ({ children }) => {
-	const [selectedProduct, setSelectedProduct] = useState(null)
-	const [products, setProducts] = useState(null)
-
 	const [cartItems, setCartItems] = useState(0)
 
 	const handleAddToCart = () => setCartItems(prev => prev + 1)
